@@ -1,0 +1,75 @@
+
+
+body {
+    background-color: rgb(191, 143, 255);
+}
+
+header {
+    color: white;
+    /* Determines where the grid area should be at depending on the grid-container */
+    grid-area: h;
+    height: 15vh;
+    width: 40vh;
+    /* Display determines where the element will be shown (flex makes it be inline) If there was no flex it would be in a block format */
+    display: flex;
+    /* Makes the element be shown at the center of the page */
+    justify-self: center;
+    text-align: center;
+    border-bottom: 2px solid white;
+}
+.pfp {
+    /* Set hieght(width will set automatically to preserve the image's aspect ratio  */
+    height: 10vh;
+    /* Creates a border and gives it a colour */
+    border: 2px solid white;
+    /* Makes the border round (circle with 50%) */
+    border-radius: 50%;
+}
+
+main {
+    grid-area: m;
+    height: 75vh;
+    color: white;
+    border-right: 2px solid white;
+    border-bottom: 2px solid white;
+}
+
+aside {
+    grid-area: a;
+    height: 75vh;
+}
+.side-img  {
+    height: 75vh;
+    
+ }
+
+
+footer {
+    color: white;
+    grid-area: f;
+    height: 10vh;
+    display: flex;
+    justify-content: space-between ;
+}
+
+a:hover{
+    color: aquamarine;
+}
+
+a {
+    color: white;
+}
+
+a:visited{
+    color: yellow
+}
+
+.grid-container {
+    /* Makes the page be shown in a grid layout */
+    display: grid;
+    grid-template-areas: 
+    "h h h h"
+    "m m m a"
+    "m m m a"
+    "f f f f";
+}
